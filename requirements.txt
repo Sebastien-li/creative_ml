@@ -9,8 +9,7 @@ flax
 flaxmodels
 gin-config
 holoviews
-jax
-jaxlib
+
 librosa
 matplotlib
 music21
