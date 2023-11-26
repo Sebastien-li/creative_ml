@@ -108,7 +108,7 @@ class AudioSupervisedDataset:
         # Extract labels
         audio_files = [str(f) for f in audio_files if os.path.isfile(f)]
         audio_files = [f for f in audio_files if os.path.splitext(f)[1] in self.ext_list]
-        labels = [f.split('/')[-2] for f in audio_files]
+        labels = [f.split('\\')[-2] for f in audio_files]
         labels_names = list(set(labels))
         labels = [labels_names.index(l) for l in labels]
         audio = [simple_audio_preprocess(f) for f in audio_files]
